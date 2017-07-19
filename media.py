@@ -2,6 +2,8 @@ import webbrowser
 
 #define the movie class
 class Movie():
+    """This class provides a way to store information about Movies"""
+    
     VALID_RATINGS = ["G", "PG", "PG-13", "R"] #list of ratings possible
 
     #Constructor for Movie Class
@@ -15,3 +17,4 @@ class Movie():
     def watch_trailer(self):
         webbrowser.open(self.trailer_youtube_url) #open the trailer in browser
 
+cd ..
