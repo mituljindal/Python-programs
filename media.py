@@ -1,12 +1,17 @@
 import webbrowser
 
+#define the movie class
 class Movie():
-    def __init__(self, movieTitle, movieStoryline, posterImage, trailerYoutube):
-        self.title = movieTitle
-        self.storyline = movieStoryline
-        self.poster_image_url = posterImage
-        self.trailer_youtube_url = trailerYoutube
+    VALID_RATINGS = ["G", "PG", "PG-13", "R"] #list of ratings possible
 
+    #Constructor for Movie Class
+    def __init__(self, movieTitle, movieStoryline, posterImage, trailerYoutube):
+        self.title = movieTitle #Title of the Movie
+        self.storyline = movieStoryline #Storyline of the Movie
+        self.poster_image_url = posterImage #Link to the Poster
+        self.trailer_youtube_url = trailerYoutube #Link to the trailer
+
+    #Function to watch the trailer
     def watch_trailer(self):
-        webbrowser.open(self.trailer_youtube_url)
+        webbrowser.open(self.trailer_youtube_url) #open the trailer in browser
 

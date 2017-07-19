@@ -2,6 +2,7 @@ import webbrowser
 import os
 import re
 
+##This file was taken from Udacity Instructor Notes of it's Python Course.
 
 # Styles and scripting for the page
 main_page_head = '''
